@@ -39,7 +39,6 @@ public class EstudianteServiceImpl implements EstudianteService{
 		estudianteRepo.save(e);
 	}
 
-	@Override
 	public void delete(Integer id) throws DataAccessException {
 		// TODO Auto-generated method stub
 		estudianteRepo.deleteById(id);
@@ -50,7 +49,5 @@ public class EstudianteServiceImpl implements EstudianteService{
 		// TODO Auto-generated method stub
 		return estudianteRepo.findByNombre(cadena);
 	}
-
-
 
 }

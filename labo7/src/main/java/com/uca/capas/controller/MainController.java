@@ -109,6 +109,7 @@ public class MainController {
 	public ModelAndView editar(@RequestParam(value="codigoE") Integer codigo) {
 		ModelAndView mav = new ModelAndView();
 		Estudiante estudiante = new Estudiante();
+		
 		try {
 			 estudiante = estudianteService.findOne(codigo);
 		} catch (Exception e) {
